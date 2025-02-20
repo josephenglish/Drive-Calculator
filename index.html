@@ -3,12 +3,32 @@
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Page Title</title>
+    <title>Drive Calculator</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
-    <script src='main.js'></script>
+   
 </head>
 <body>
-    
+    <div class="nav">
+        <h1>Drive Calculator</h1>  
+    </div>
+    <div class="container">
+        <div class="calc">
+            <form id="f">
+                <label for="distance">Distance(miles)</label><br />
+                <input name="distance" type="text" id="d" value="0" ><br />
+                <label for="speed">Speed(mph)</label><br />
+                <input name="speed" type="text" id="s" value="0"><br />
+                <button type="button" id="cal">Calculate!</button><br /><br />
+                <button type="button" id="c">Clear</button>
+                
+            </form>
+        </div>
+        <div class="result">
+            <p>Time</p> <br />
+            <p id="t"> </p>
+        </div>
+    </div>
+    <script src='main.js'></script>
 </body>
 </html>
